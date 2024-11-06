@@ -1,0 +1,285 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.navbar {
+    transition: background-color 0.3s ease;
+    
+}
+
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.about{
+    padding-top: 20px;
+}
+
+.card {
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.btn-primary {
+    background-color: #e74c3c;
+    border-color: #e74c3c;
+}
+
+.btn-primary:hover {
+    background-color: #c0392b;
+    border-color: #c0392b;
+}
+
+.btn-outline-light:hover {
+    color: #e74c3c;
+}
+
+#about img {
+    max-height: 400px;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        height: 60vh;
+    }
+}
+
+/* Login page styles */
+.login-page {
+    background-color: #f0f0f0;
+    background-image: url('martial-arts-background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.login-card {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.login-card .card-title {
+    color: #333;
+}
+
+.login-card .card-subtitle {
+    color: #555;
+}
+
+.login-card .btn-primary {
+    background-color: #e74c3c;
+    border-color: #e74c3c;
+}
+
+.login-card .btn-primary:hover {
+    background-color: #c0392b;
+    border-color: #c0392b;
+}
+
+.login-card a {
+    color: #3498db;
+}
+
+.login-card a:hover {
+    color: #2980b9;
+}
+
+/* Signup page styles */
+.signup-page {
+    background-color: #f0f0f0;
+    background-image: url('martial-arts-background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.signup-card {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.signup-card .card-title {
+    color: #333;
+}
+
+.signup-card .btn-primary {
+    background-color: #e74c3c;
+    border-color: #e74c3c;
+}
+
+.signup-card .btn-primary:hover {
+    background-color: #c0392b;
+    border-color: #c0392b;
+}
+
+.signup-card a {
+    color: #3498db;
+}
+
+.signup-card a:hover {
+    color: #2980b9;
+}
+
+/* Classes page styles */
+.page-header {
+    margin-top: 56px; /* To account for the fixed navbar */
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body h5 {
+    color: #e74c3c;
+}
+
+.card-body ul {
+    padding-left: 20px;
+}
+
+.list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.badge {
+    font-size: 0.9em;
+}
+
+/* Instructors section styles */
+#instructors .card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+#instructors .card:hover {
+    transform: translateY(-5px);
+}
+
+#instructors .card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
+#instructors .card-title {
+    color: #e74c3c;
+}
+
+#instructors .card-text {
+    font-weight: bold;
+}
+
+#instructors ul {
+    margin-top: 1rem;
+}
+
+/* Forgot password page styles */
+.forgot-password-page {
+    background-color: #f0f0f0;
+    background-image: url('martial-arts-background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.forgot-password-card {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.forgot-password-card .card-title {
+    color: #333;
+}
+
+.forgot-password-card .btn-primary {
+    background-color: #e74c3c;
+    border-color: #e74c3c;
+}
+
+.forgot-password-card .btn-primary:hover {
+    background-color: #c0392b;
+    border-color: #c0392b;
+}
+
+/* User profile page styles */
+.user-profile .card {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.user-profile .card:hover {
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.user-profile .card-title {
+    color: #e74c3c;
+    margin-bottom: 1rem;
+}
+
+.user-profile .btn-primary {
+    background-color: #e74c3c;
+    border-color: #e74c3c;
+}
+
+.user-profile .btn-primary:hover {
+    background-color: #c0392b;
+    border-color: #c0392b;
+}
+
+.user-profile .table {
+    font-size: 0.9rem;
+}
+
+.user-profile .table th {
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+/* Schedule page styles */
+.schedule-container {
+    overflow-x: auto;
+}
+
+.table-schedule {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.table-schedule th, .table-schedule td {
+    border: 1px solid #dee2e6;
+    padding: 0.75rem;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.table-schedule thead th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.table-schedule .time-column {
+    font-weight: bold;
+    background-color: #f8f9fa;
+}
+
+.table-schedule td {
+    transition: background-color 0.3s ease;
+}
+
+.table-schedule td:hover {
+    background-color: #f1f3f5;
+}
